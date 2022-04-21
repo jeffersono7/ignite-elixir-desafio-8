@@ -10,6 +10,7 @@ defmodule Queue.Application do
     children = [
       # Starts a worker by calling: Queue.Worker.start_link(arg)
       # {Queue.Worker, arg}
+      {Queue, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
